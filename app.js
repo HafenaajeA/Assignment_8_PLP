@@ -3,6 +3,7 @@
  * This file implements a RESTful API for managing library books using Express and MySQL
  */
 
+require("dotenv").config();
 const express = require("express");
 const mysql = require("mysql2");
 const app = express();
@@ -12,10 +13,10 @@ app.use(express.json());
 
 // Database connection configuration
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "a@0816599224#H",
-  database: "library_management",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DATABASE,
 });
 
 /**
@@ -79,5 +80,5 @@ app.delete("/books/:id", (req, res) => {
 });
 
 // Start the server
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
