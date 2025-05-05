@@ -16,6 +16,8 @@ This project implements a complete Library Management System with:
   - Members
   - Loans
 
+View the database ERD diagram here: [Library Management System ERD](https://drive.google.com/file/d/1TvWdelDTH_yEkSE_bx_z3CnQyA7_ibHi/view?usp=sharing)
+
 ## Setup Instructions
 
 ### 1. Database Setup
