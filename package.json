@@ -1,0 +1,13 @@
+{
+  "name": "library-management-api",
+  "version": "1.0.0",
+  "description": "RESTful API for Library Management System with MySQL database",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
